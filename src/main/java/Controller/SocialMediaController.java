@@ -318,7 +318,7 @@ public class SocialMediaController {
                 //String updatedMessageJSON = mapper.writeValueAsString(retrievedMessage);
 
                 ctx.status(200).result(updatedMessageJSON);
-                //System.out.println("The message in JSON is "+updatedMessageJSON);
+                //System.t.println("The message in JSON is "+updatedMessageJSON);
             }
         } catch (NumberFormatException e) {
             ctx.status(400).result("Invalid message ID format.");
